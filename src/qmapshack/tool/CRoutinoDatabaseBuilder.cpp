@@ -171,7 +171,12 @@ void CRoutinoDatabaseBuilder::finished(int exitCode, QProcess::ExitStatus status
         QStringList args;
         args << QString("--dir=%1").arg(targetPath);
         args << QString("--prefix=%1").arg(targetPrefix);
-        args << QString("--tagging=%1").arg(instance->routinoPath("tagging.xml"));
+        /*
+           do not specify tagging argument - routino will search
+           the database folder for prefix-tagging.xml
+           and system routino folder for tagging.xml
+           First one found is used.
+        */
         args << "--process-only";
 
         stdOut(planetsplitter + " " +  args.join(" ") + "\n");
@@ -184,7 +189,6 @@ void CRoutinoDatabaseBuilder::finished(int exitCode, QProcess::ExitStatus status
         QStringList args;
         args << QString("--dir=%1").arg(targetPath);
         args << QString("--prefix=%1").arg(targetPrefix);
-        args << QString("--tagging=%1").arg(instance->routinoPath("tagging.xml"));
 
         if(first)
         {

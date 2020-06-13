@@ -123,6 +123,17 @@ with open('CMakeLists.txt') as fp:
 with open('CMakeLists.txt', 'w') as fp:
     fp.write(newText)
 
+print('Replace version string in changelog.txt.')
+with open('changelog.txt') as fp:
+    newText = fp.read().replace("V1.XX.X", "V" + str(next_version))
+
+with open('changelog.txt', 'w') as fp:
+    fp.write(newText)
+
+print('Update list of contributors.')
+subprocess.run("./collect_copyright.py", shell=True)
+
+
 print("Commit changes.")
 run(f'git commit {DRYRUN} -a -v -m "Update version to {next_version}"')
 

@@ -12472,37 +12472,37 @@ or
     <message>
         <location filename="../gis/db/IResolveDatabaseConflict.ui" line="14"/>
         <source>Database Conflict</source>
-        <translation type="unfinished"></translation>
+        <translation>Конфликт с базой данных</translation>
     </message>
     <message>
         <location filename="../gis/db/IResolveDatabaseConflict.ui" line="26"/>
         <source>TextLabel</source>
-        <translation type="unfinished">Метка текста</translation>
+        <translation>Метка текста</translation>
     </message>
     <message>
         <location filename="../gis/db/IResolveDatabaseConflict.ui" line="39"/>
         <source>Remember choice for all items of this project</source>
-        <translation type="unfinished"></translation>
+        <translation>Запомнить выбор для всех элементов этого проекта</translation>
     </message>
     <message>
         <location filename="../gis/db/IResolveDatabaseConflict.ui" line="48"/>
         <source>Clone &amp;&amp; Save</source>
-        <translation type="unfinished">Клонировать и сохранить</translation>
+        <translation>Клонировать и сохранить</translation>
     </message>
     <message>
         <location filename="../gis/db/IResolveDatabaseConflict.ui" line="55"/>
         <source>Take Remote</source>
-        <translation type="unfinished"></translation>
+        <translation>Выбрать удалённый элемент</translation>
     </message>
     <message>
         <location filename="../gis/db/IResolveDatabaseConflict.ui" line="62"/>
         <source>Force Save</source>
-        <translation type="unfinished">Сохранить принудительно</translation>
+        <translation>Сохранить принудительно</translation>
     </message>
     <message>
         <location filename="../gis/db/IResolveDatabaseConflict.ui" line="69"/>
         <source>Abort</source>
-        <translation type="unfinished">Прервать</translation>
+        <translation>Прервать</translation>
     </message>
 </context>
 <context>
